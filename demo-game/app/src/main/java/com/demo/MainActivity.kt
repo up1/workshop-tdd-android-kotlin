@@ -23,7 +23,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val repository = (application as DemoApplication).repository
         val factory = (application as DemoApplication).gameFactory
-        viewModel = ViewModelProvider(this, CocktailsGameViewModelFactory(repository, factory))
+        viewModel = ViewModelProvider(this,
+            CocktailsGameViewModelFactory(repository, factory))
             .get(CocktailsGameViewModel::class.java)
 
         viewModel.getLoading().observe(this, Observer {
