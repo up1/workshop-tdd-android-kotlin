@@ -1,6 +1,7 @@
 package com.demo.common.repository
 
 import android.content.SharedPreferences
+import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.demo.common.network.Cocktail
 import com.demo.common.network.CocktailsApi
 import com.nhaarman.mockitokotlin2.any
