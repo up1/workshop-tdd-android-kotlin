@@ -40,7 +40,7 @@ class CocktailsRepositoryImpl(
             }
 
             override fun onFailure(call: Call<CocktailsContainer>?, t: Throwable?) {
-                callback.onError("Couldn't get cocktails")
+                callback.onError("on failure")
             }
         }
 
